@@ -203,7 +203,7 @@ export default function App() {
     </assistant_response>
   </example>
 </examples>
-; 
+`;
 
 export const CONTINUE_PROMPT = stripIndents`
   Continue your prior response. IMPORTANT: Immediately begin from where you left off without any interruptions.
