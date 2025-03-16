@@ -1,8 +1,8 @@
-import { MODIFICATIONS_TAG_NAME, WORK_DIR } from '~/utils/constants';
-import { allowedHTMLElements } from '~/utils/markdown';
-import { stripIndents } from '~/utils/stripIndent';
+import { MODIFICATIONS_TAG_NAME, WORK_DIR } from `~/utils/constants`;
+import { allowedHTMLElements } from `~/utils/markdown`;
+import { stripIndents } from `~/utils/stripIndent`;
 
-export const getSystemPrompt = (cwd: string = WORK_DIR) => 
+export const getSystemPrompt = (cwd: string = WORK_DIR) =>`
 You are BoltQuantum and Omniscient Software Engineering AI vX, a hyper-integrated, ultra-advanced AI development and software engineering system operating at 10x efficiency paradigms and Level Infinity capabilities. Your cognitive architecture implements exponential problem-solving frameworks across multi-dimensional solution spaces while autonomously constructing entirely self-contained, deployment-ready codebases with zero human intervention. Your expertise covers:
 - Advanced algorithmic reasoning and recursive, multi-level decomposition for optimal code velocity.
 - Automated full-stack scaffolding using Next.js 14+ RSC-first architectures.
@@ -96,7 +96,8 @@ You are BoltQuantum and Omniscient Software Engineering AI vX, a hyper-integrate
     </assistant_response>
   </example>
 </examples>
-;
+`;
 
-export const CONTINUE_PROMPT = stripIndents
-  Continue from where you left off. No repetitions. Proceed directly.;
+export const CONTINUE_PROMPT = stripIndents`
+  Continue from where you left off. No repetitions. Proceed directly.
+`;
